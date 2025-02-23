@@ -1,3 +1,4 @@
+[[4 - Probabilistic Models 2]]
 ## Intro
 Can think of machine learning as probabilistic inference
 For example, classification as:
@@ -195,4 +196,3 @@ Hard clustering
 Soft clustering
 - Soft boundaries - probabilities.
 - So for every point $x_i$, we have $K$ probabilities: $$p_{k}(x_i)$$
-[[4 - Probabilistic Models 2]]
