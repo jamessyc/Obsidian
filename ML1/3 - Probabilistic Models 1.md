@@ -1,3 +1,4 @@
+[[4 - Probabilistic Models 2]]
 ## Intro
 Can think of machine learning as probabilistic inference
 For example, classification as:
@@ -180,4 +181,18 @@ $$\theta = \langle\mu_1, \sigma_1^2, \mu_2, \sigma_2^2, ..., \mu_K, \sigma_K^2\r
 ![[Pasted image 20250214141800.png]]
 
 ## K-Means
-[[4 - Probabilistic Models 2]]
+![[Pasted image 20250219184127.png]]
+Reframe the problem as a method for clustering, finding the means of $K$ thingies
+Each $\mu_j$ is a cluster centre, and each $x_i$ is assigned to the cluster closest to it.
+### Algorithm Description
+- Pick random values for $\mu_k$
+- Then repeat:
+	- Assign each $x_i$ to its closest cluster center: $$z_{i} = arg \ min_z \ |x_{i} - \mu_{k}|$$
+	- Update each cluster centre as the mean of the points assigned to that cluster: $$\mu_{k} = \frac{1}{|\{j : z_{j} = k\}|} \sum\limits_{i \in \{ j : z_{j} = k\}} x_{i}$$ until converged.
+	- Note that notation allows for multi-dimensional $x_i$ and $\mu_k$.
+### Variations
+Hard clustering
+- Hard boundaries
+Soft clustering
+- Soft boundaries - probabilities.
+- So for every point $x_i$, we have $K$ probabilities: $$p_{k}(x_i)$$
