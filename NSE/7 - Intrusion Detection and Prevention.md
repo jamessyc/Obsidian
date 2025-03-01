@@ -1,4 +1,4 @@
-##### Why do we need intrusion detection?
+x##### Why do we need intrusion detection?
 We already have firewalls!
 - A firewall does access control
 - A gatekeeper that blocks / drops packets
